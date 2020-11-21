@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import LandingScreen from './screens/LandingScreen/LandingScreen.js';
+import LandingScreen from './screens/LandingScreen/landingScreen.js';
 
 const AppRouter = () => {
 	return (

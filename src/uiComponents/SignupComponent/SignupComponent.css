@@ -1,0 +1,45 @@
+/* need to add fonts*/
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+#signup-container {
+    display :flex;
+    flex-direction: column;
+    width : 22vw;
+    height : 66.7vh;
+    align-items : center;
+    justify-content: center;
+    color: #626161;
+    padding-bottom: 5vh;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 6px 6px rgba(67, 64, 64, 0.35);
+}
+#signup-header {
+    display : flex;
+    width : 100%;
+    flex-direction : row;
+    align-items: center;
+    justify-content : space-around;
+    padding : 0 2vw;
+}
+#signup-header h4 {
+    font-size : 1.15rem;
+}
+.signup-elements {
+    margin-top: 2vh !important;
+    width : 74.7%;
+}
+#submit-button {
+    margin-top: 6vh !important;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width : 43%;
+    background-color: #0088FF;
+    color : white;
+    padding : 1vh 2vw;
+    border-radius: 6px;
+}

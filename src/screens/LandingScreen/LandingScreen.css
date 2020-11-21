@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+#screen-container {
+    height : 100vh;
+    display : flex;
+    flex-direction : column;
+    color: white;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#bg-1 {
+    height : 100vh;
+    width : 82vw;
+    background-image: url('../../assets/screen_pattern.png');
+    background-color: black;
+    position: absolute;
+    left:0;
+    z-index:-1;
+}
+#bg-2 {
+    height : 100vh;
+    width : 18vw;
+    background: linear-gradient(157.9deg, #0088FF -8.35%, #FF3366 99.58%);
+    position: absolute;
+    right:0;
+    z-index :-1;
+}
+
+#signup-component {
+    position: absolute;
+    left : 70.5vw;
+    top : 16.65vh;
+}
+
+#ieee-logo {
+    margin-top : 5vh;
+    margin-left : 3vw;
+}
+
+#page-content {
+    margin-left : 3vw;
+    margin-top : 10vh;
+}
+#page-content-heading {
+    margin-bottom:-4vh;
+}
+#page-content h1{
+    font-size: 3.2rem;
+    line-height: normal;
+}
+#page-content h3 {
+    margin-top : 6vh;
+    font-size : 1rem;
+}
+#first-social-media-handle {
+    margin-left : 3vw !important;
+}
+#social-media-handles {
+    display:flex;
+    flex-direction: row; 
+    margin-bottom: 3vh;
+}
+
+#social-media-handles img {
+    margin-left : 1.15vw;
+}
