@@ -1,6 +1,19 @@
 * {
     box-sizing: border-box;
 }
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
 #screen-container {
     height : 100vh;
     display : flex;
@@ -9,11 +22,17 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-
+.visible-overlay {
+    display : block !important;
+}
+.invisible-overlay {
+    display : none !important;
+}
 #bg-1 {
     height : 100vh;
     width : 82vw;
     background-image: url('../../assets/screen_pattern.png');
+    background-repeat: round;
     background-color: black;
     position: absolute;
     left:0;
@@ -33,12 +52,21 @@
     left : 70.5vw;
     top : 16.65vh;
 }
+#signup-component-mobile {
+    position: absolute;
+    z-index: 3;
+}
 
 #ieee-logo {
     margin-top : 5vh;
     margin-left : 3vw;
 }
-
+.invisible-signup {
+    display : none;
+}
+.visible-signup {
+    display : flex;
+}
 #page-content {
     margin-left : 3vw;
     margin-top : 10vh;
@@ -48,11 +76,35 @@
 }
 #page-content h1{
     font-size: 3.2rem;
-    line-height: normal;
 }
 #page-content h3 {
     margin-top : 6vh;
     font-size : 1rem;
+}
+#register-btn {
+    display: none;
+    margin-top: 6vh !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width : 20%;
+    background-color: #0088FF;
+    color : white;
+    padding : 2vh 2vw;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#register-btn:hover {
+    background-color : #1F96FF;
+    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+}
+#register-btn:active {
+    background-color: #0578DC;
+    box-shadow : 0 0 0 0;
 }
 #first-social-media-handle {
     margin-left : 3vw !important;
@@ -66,3 +118,132 @@
 #social-media-handles img {
     margin-left : 1.15vw;
 }
+
+@media screen and (max-width: 1126px) {
+    #page-content h1{
+        font-size: 3rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.9rem;
+    }
+    #signup-component {
+        left: 69vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body {
+        margin : 0 0;
+        padding: 0 0;
+    }
+    #bg-1 {
+        width : 100vw;
+    }
+    #bg-2 {
+        display: none;
+    }
+    #page-content {
+        width : 100%;
+        margin-left : 0;
+        padding-left : 3vw;
+        text-align: center;
+    }
+    #signup-component {
+        display : none;
+    }
+    #signup-component-mobile {
+        top :50%;
+        left : 50%;
+        transform: translate(-50%,-50%);
+    }
+    #register-btn {
+        display: flex;
+    }
+}
+@media screen and  (max-width : 580px) {
+    #page-content h1{
+        font-size: 2.6rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.9rem;
+    }
+    #register-btn {
+        width : 30%;
+    }
+    #social-media-handles img {
+        margin-left : 2vw;
+    }
+}
+
+@media screen and (max-width  :540px) {
+    #page-content {
+        text-align: left;
+    }
+}
+
+@media screen and  (max-width : 355px) {
+    #page-content h1{
+        font-size: 2.3rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.9rem;
+    }
+    #register-btn {
+        width : 38%;
+        margin-top: 4vh;
+    }
+}
+@media screen and  (max-width : 300px) {
+    #page-content h1{
+        font-size: 2.1rem !important;
+    }
+}
+@media screen and (max-height : 570px){
+    #page-content h1{
+        font-size: 2rem !important;
+    }
+}
+/*
+@media screen and (max-width: 990px) {
+    #page-content h1{
+        font-size: 2.7rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.8rem;
+    }
+    #signup-component {
+        left: 67.5vw;
+    }
+}
+@media screen and (max-width: 892px) {
+    #page-content h1{
+        font-size: 2.4rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.8rem;
+    }
+    #signup-component {
+        left: 65.5vw;
+    }
+}
+@media screen and (max-width: 786px) {
+    #page-content h1{
+        font-size: 2.3rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.8rem;
+    }
+    #signup-component {
+        left: 65.5vw;
+    }
+}
+@media screen and (max-width: 734px) {
+    #page-content h1{
+        font-size: 2.1rem !important;
+    }
+    #page-content h3 {
+        font-size : 0.8rem;
+    }
+    #signup-component {
+        left: 64vw;
+    }
+}*/

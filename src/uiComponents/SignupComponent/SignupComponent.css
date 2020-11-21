@@ -3,6 +3,12 @@
     box-sizing: border-box;
     font-size: 1rem;
 }
+#close-icon {
+    display:none;
+    position: absolute;
+    top:2vh;
+    right: 4vw;
+}
 #signup-container {
     display :flex;
     flex-direction: column;
@@ -11,6 +17,20 @@
     align-items : center;
     justify-content: center;
     color: #626161;
+    padding-bottom: 5vh;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 6px 6px rgba(67, 64, 64, 0.35);
+}
+#login-container {
+    display :flex;
+    flex-direction: column;
+    width : 22vw;
+    height : 66.7vh;
+    align-items : center;
+    justify-content: flex-start;
+    color: #626161;
+    padding-top : 2.5vh;
     padding-bottom: 5vh;
     border-radius: 10px;
     background-color: white;
@@ -42,4 +62,83 @@
     color : white;
     padding : 1vh 2vw;
     border-radius: 6px;
+    cursor: pointer;
 }
+.disappear {
+    display: none;
+}
+#submit-button:hover {
+    background-color : #1F96FF;
+    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+}
+#submit-button:active {
+    background-color: #0578DC;
+    box-shadow : 0 0 0 0;
+}
+.thisison {
+    color :  #0088FF ;
+    border-bottom: 2px solid #0088FF;
+    padding-bottom: 0.5vh;
+}
+.thisisoff {
+    color :  #656565;
+    text-decoration: none;
+    padding-bottom: 0.5vh;
+}
+@media screen and (max-width: 1126px){
+    #signup-container,#login-container {
+        width : 25vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    #signup-container, #login-container {
+        width : 35vw;
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 860px){
+    #signup-container, #login-container {
+        width : 40vw;
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 772px){
+    #signup-container, #login-container {
+        width : 50vw;
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 540px){
+    #close-icon{
+        display:inline-block;
+    }
+    #signup-container, #login-container  {
+        width : 100vw;
+        height:100vh;
+        font-size:1.4rem !important;
+        border-radius: 0;
+    }
+    #login-container {
+        padding-top : 19.5vh;
+    }
+    #signup-header {
+        padding : 0 12vw;
+    }
+}
+
+/*@media screen and (max-width: 990px){
+    #signup-container {
+        width : 28vw;
+        height : 58vh;
+    }
+}
+@media screen and (max-width: 892px){
+    #signup-container {
+        width : 32vw;
+    }
+}
+@media screen and (max-width: 734px){
+    #signup-container {
+        width : 35vw;
+    }
+}*/
