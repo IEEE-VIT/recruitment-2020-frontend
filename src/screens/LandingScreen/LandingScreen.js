@@ -34,9 +34,9 @@ const LandingScreen = () => {
         </div>
         <div id="register-btn" onClick={toggleVisibleComp}>Register Now</div>
         <div id="social-media-handles"> 
-            <a href="https://ieeevit.org/"><img id="first-social-media-handle" src={web_logo} /></a>
-            <a href="https://twitter.com/ieeevitvellore" ><img src={twitter_logo} /></a>
-            <a href="https://www.instagram.com/ieeevitvellore/" ><img src={insta_logo} /></a>
+            <a href="https://ieeevit.org/" target="_blank"><img id="first-social-media-handle" src={web_logo} /></a>
+            <a href="https://twitter.com/ieeevitvellore" target="_blank"><img src={twitter_logo} /></a>
+            <a href="https://www.instagram.com/ieeevitvellore/" target="_blank"><img src={insta_logo} /></a>
         </div>
       </div>
   );

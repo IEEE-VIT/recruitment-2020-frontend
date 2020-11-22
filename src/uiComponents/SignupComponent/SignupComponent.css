@@ -1,13 +1,19 @@
 /* need to add fonts*/
+@font-face {
+    font-family : GothamMedium;
+    src : url('../../assets/fonts/GothamMedium.ttf');
+}
+
 * {
     box-sizing: border-box;
     font-size: 1rem;
+    font-family: GothamMedium;
 }
 #close-icon {
     display:none;
     position: absolute;
-    top:2vh;
-    right: 4vw;
+    top:6vh;
+    right: 6.5vw;
 }
 #signup-container {
     display :flex;
@@ -15,7 +21,8 @@
     width : 22vw;
     height : 66.7vh;
     align-items : center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top : 2.5vh;
     color: #626161;
     padding-bottom: 5vh;
     border-radius: 10px;
@@ -50,6 +57,7 @@
 .signup-elements {
     margin-top: 2vh !important;
     width : 74.7%;
+    font-family: Roboto;
 }
 #submit-button {
     margin-top: 6vh !important;
@@ -79,11 +87,13 @@
     color :  #0088FF ;
     border-bottom: 2px solid #0088FF;
     padding-bottom: 0.5vh;
+    cursor : pointer;
 }
 .thisisoff {
     color :  #656565;
     text-decoration: none;
     padding-bottom: 0.5vh;
+    cursor : pointer;
 }
 @media screen and (max-width: 1126px){
     #signup-container,#login-container {
@@ -94,6 +104,7 @@
     #signup-container, #login-container {
         width : 35vw;
         height: 65vh;
+        padding-top : 1.2vh;
     }
 }
 @media screen and (max-width: 860px){
@@ -117,8 +128,6 @@
         height:100vh;
         font-size:1.4rem !important;
         border-radius: 0;
-    }
-    #login-container {
         padding-top : 19.5vh;
     }
     #signup-header {
