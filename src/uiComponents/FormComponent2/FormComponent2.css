@@ -87,7 +87,7 @@
 }
 @media screen and (max-width : 450px) {
     #comp2-container h3 {
-        font-size : 1rem !important;
+        font-size : 1.1rem !important;
     }
 }
 @media screen and (max-width : 363px) {
@@ -98,6 +98,11 @@
 @media screen and (max-width : 323px) {
     .domain-container {
         font-size : 0.7rem;
+        margin-bottom: 1.2vh;
+    }
+
+    #error-message {
+        margin-bottom : 5vh;
     }
 }
 
