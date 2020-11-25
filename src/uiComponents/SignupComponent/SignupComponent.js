@@ -62,6 +62,7 @@ function SignupComponent(props) {
                  <TextField style={{width:"100%"}}  id="outlined-basic" type="password" value={confirmPass} label="Confirm Password" onChange={(newConfirmPass)=>{setConfirmPass(newConfirmPass.target.value)}}/>
             </div>
             <div id="submit-button" onClick = {()=> handleSubmit()}>Submit</div>
+            <div className={signUpIndicator?'disappear':'dummy-class'} id="forgot-password">Forgot Password? <span style={{color : "#0088FF",textDecoration:"underline"}}>Reset now</span></div>
         </div>
     </div> 
 }

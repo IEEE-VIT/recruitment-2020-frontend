@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
-import './landingScreen.css';
+import './LandingScreen.css';
 import ieee_vit_logo from '../../assets/ieee_vit_logo.png';
 import web_logo from '../../assets/web_logo.png';
 import twitter_logo from '../../assets/twitter_logo.png';
 import insta_logo from '../../assets/insta_logo.png';
+import github_logo from '../../assets/github_logo.png';
+import facebook_logo from '../../assets/facebook_logo.png';
 
 import SignupComponent from '../../uiComponents/SignupComponent/SignupComponent';
 const LandingScreen = () => {
@@ -37,6 +39,8 @@ const LandingScreen = () => {
             <a href="https://ieeevit.org/" target="_blank"><img id="first-social-media-handle" src={web_logo} /></a>
             <a href="https://twitter.com/ieeevitvellore" target="_blank"><img src={twitter_logo} /></a>
             <a href="https://www.instagram.com/ieeevitvellore/" target="_blank"><img src={insta_logo} /></a>
+            <a href="https://github.com/IEEE-VIT" target="_blank"><img src={github_logo} /></a>
+            <a href="https://www.facebook.com/IEEEVIT/" target="_blank"><img src={facebook_logo} /></a>
         </div>
       </div>
   );

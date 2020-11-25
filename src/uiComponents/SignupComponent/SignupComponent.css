@@ -68,7 +68,7 @@
     width : 43%;
     background-color: #0088FF;
     color : white;
-    padding : 1vh 2vw;
+    padding : 1.4vh 2vw;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -94,6 +94,13 @@
     text-decoration: none;
     padding-bottom: 0.5vh;
     cursor : pointer;
+}
+#forgot-password {
+    margin-top : 4vh;
+    font-size : 1rem;
+}
+#forgot-password span {
+ cursor: pointer;
 }
 @media screen and (max-width: 1126px){
     #signup-container,#login-container {
