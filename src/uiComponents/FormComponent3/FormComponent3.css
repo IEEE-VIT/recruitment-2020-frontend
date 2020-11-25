@@ -13,6 +13,7 @@
 #comp3-container h3 {
         font-size: 1.2rem !important;
         font-weight: 500 !important;
+        line-height: 4vh;
 }
 #comp3-inp {
     background-color : #0088FF;
