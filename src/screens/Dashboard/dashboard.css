@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width : 100vw;
-    height : 100vh;
+    height: 100vh;
     color : white;
 }
 #dashboard-header {
@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-top : 3vh;
+    margin-right: 3vw;
 }
 #dashboard-welcome-message h1{
     font-size : 2.5rem;
@@ -27,6 +28,7 @@
 }
 #dashboard-body {
     margin-left : 3vw;
+    margin-right: 3vw;
 }
 #logout-btn {
     color : white;
@@ -57,4 +59,43 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top : 9vh;
+}
+@media screen and (max-width : 1223px) {
+    #dashboard-container {
+        height: max-content;
+    }
+}
+@media screen and (max-width : 1000px) {
+    #logout-btn {
+        width : 7vw;
+    }
+}
+@media screen and (max-width : 765px) {
+    #round-details {
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 640px) {
+    #logout-btn {
+        width : 10vw;
+    }
+}
+@media screen and (max-width : 560px) {
+    #dashboard-container {
+        height: max-content;
+    }
+    #logout-btn {
+        width : 15vw;
+    }
+}
+@media screen and (max-width:450px) {
+    #dashboard-welcome-message h1{
+        font-size : 2.1rem;
+    }
+    #dashboard-welcome-message p {
+        font-size : 0.9rem;
+    }
+    #logout-btn {
+        width : 18vw;
+    }
 }
