@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: GothamMedium;
 }
+.absolute-pos {
+    position: fixed;
+}
 #overlay {
     position: fixed;
     display: none;
