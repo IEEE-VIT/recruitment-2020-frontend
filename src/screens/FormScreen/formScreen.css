@@ -1,0 +1,341 @@
+@font-face {
+    font-family: GothamMedium;
+    src : url('../../assets/fonts/GothamMedium.ttf');
+}
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+#form-screen-container {
+    box-sizing: border-box;
+    font-family: GothamMedium;
+    user-select :none;
+    color:white;
+    background-color: #010101;
+    height :100vh; 
+    width :100vw;
+    background-image: url('../../assets/form_bg_pattern.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#form-logout-btn {
+    color : white;
+    width :7.3vw;
+    height : 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color:#0088FF ;
+    border-radius: 4px; 
+    cursor : pointer ;
+    padding: 1vh 3vw;
+    font-size: 1rem;
+    margin-right: 1vw;
+}
+#form-logout-btn:hover {
+    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+}
+#form-logout-btn:active {
+    background-color: rgba(0, 136, 255, 0.3);
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding : 3vh 3vw;
+}
+#footer-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#submit-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width : 9vw;
+    background-color: #0088FF;
+    color : white;
+    padding : 1.5vh 2vw;
+    margin-bottom : 4vh;
+    margin-left : 5vw;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#submit-btn:hover , #icon-up:hover ,#icon-down:hover {
+    background-color : #1F96FF;
+    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+}
+#submit-btn:active ,#icon-up :active ,#icon-down:active {
+    background-color: #0578DC;
+    box-shadow : 0 0 0 0;
+}
+#icon-up,#icon-down {
+    color :white;
+    background-color: #0088FF;
+    border-radius: 4px;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+#icon-size {
+    font-size: 40px;
+}
+#page-arrows {
+    display : flex;
+    flex-direction: row;
+    margin-bottom: 4vh;
+    margin-right: 3vw;
+}
+#form-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 3vw;
+    align-items: center;
+}
+.visible-comp {
+    display : flex;  
+}
+.invisible-comp {
+    display: none !important ;
+}
+.disabled-comp {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity : 0;
+}
+.disabled-arrow {
+    opacity : 0.5;
+    cursor : normal;
+    pointer-events: none;
+}
+#completion-indicator {
+    background-color: #0088FF;
+    height:1vh;
+}
+#confirmation-screen {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 50vh;
+    width : 45vw;
+    position: absolute;
+    top :50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index:3;
+    background-image: url('../../assets/confirm_box_pattern_top_left.png'),url('../../assets/confirm_box_pattern_bottom_right.png');
+    background-position: left top,right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10.5rem,10.5rem;
+    box-shadow: 5px 10px 6px rgba(16, 16, 16, 0.65);
+    border-radius: 10px;
+}
+
+#confirmation-screen h2 {
+    color : #444444;
+    font-size : 1.65rem;
+    line-height: 4.5vh;
+}
+
+#confirmation-btns {
+    margin-top :3vh;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items : center;
+    width : 100%;
+    font-size: 1.05rem;
+}
+#confirmation-btns h4 {
+    color :#0088FF;
+    cursor: pointer;
+}
+
+#confirmation-btns div {
+    color : white;
+    background-color:#0088FF;
+    padding: 1.8vh 3vw;
+    border-radius: 3px;
+    cursor : pointer;
+}
+#confirmed-screen {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 50vh;
+    width : 45vw;
+    position: absolute;
+    top :50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    color :black;
+    z-index:3;
+    background-image: url('../../assets/confirm_box_pattern_top_left.png'),url('../../assets/confirm_box_pattern_bottom_right.png');
+    background-position: left top,right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10.5rem,10.5rem;
+    box-shadow: 5px 10px 6px rgba(16, 16, 16, 0.65);
+    border-radius: 10px;
+}
+#confirmed-screen h2 {
+    color : black;
+    font-size : 1.5rem;
+    line-height: 4.5vh;
+}
+#confirmed-screen h4 {
+    color : black;
+    font-weight: 600;
+    font-size : 1rem;
+}
+@media screen and (max-width : 1200px){
+    #confirmed-screen h2 {font-size : 1.4rem;}
+    #confirmed-screen h4 {font-size : 1rem;}
+}
+@media screen and (max-width : 1070px) {
+    #confirmation-screen, #confirmed-screen {
+        width : 60vw;
+    }
+}
+@media screen and (max-width : 920px) {
+    #form-logout-btn {
+        width :12vw;
+        height : 6vh;
+        font-size:0.9rem;
+    }
+    #icon-size {
+        font-size : 40px;
+    }
+    #icon-up {
+        margin-right: 1.7vw;
+    }
+    #submit-btn {
+        width : 19vw;
+        font-size: 0.95rem;
+    }
+    #confirmation-screen, #confirmed-screen {
+        background-size : 9.5rem, 9.5rem; 
+    }
+}
+@media screen and (max-width : 802px) {
+    #form-components {
+        margin-top : -8vh;
+    }
+    #confirmation-screen, #confirmed-screen {
+        width : 74vw;
+        height :45vh;
+        background-size: 8.5rem,8.5rem;
+    }
+    #confirmation-screen h2 , #confirmed-screen h2 {
+        font-size : 1.4rem;
+    }
+}
+@media screen and (max-width : 720px) {
+    #confirmed-screen {
+        width : 80vw;
+    }
+    #confirmed-screen h2 {
+        padding-left : 2vw;
+        padding-right : 2vw;
+        text-align:center;
+    }
+}
+@media screen and (max-width : 590px) {
+    #confirmation-screen,#confirmed-screen {
+        width : 80vw;
+    }
+    #confirmation-screen h2 , #confirmed-screen h2 {
+        font-size : 1.35rem;
+    }
+    #confirmed-screen h4 {
+        font-size : 0.9rem;
+    }
+    #confirmation-btns {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width : 520px) {
+    #form-logout-btn {
+        width :18vw;
+        height : 4.5vh;
+        border-width: 2px;
+    }
+    #icon-size {
+        font-size : 40px;
+    }
+    #icon-up {
+        margin-right: 3vw;
+    }
+    #submit-btn {
+        font-size: 1rem;
+        width : 26vw;
+        padding : 1.8vh 2.7vw;
+    }
+    #confirmation-screen,#confirmed-screen {
+        width : 90vw;
+        background-size: 6rem,6rem;
+    }
+}
+@media screen and (max-width : 470px){
+    #confirmation-screen h2,#confirmed-screen h2{
+        text-align:center;
+        margin-left : 2.5vw;
+        margin-right: 2.5vw;
+    }
+    #confirmed-screen h2 {
+        font-size : 1.3rem;
+    }
+    #confirmed-screen h4 {
+        font-size : 0.8rem;
+    }
+}
+@media screen and (max-width : 420px) {
+    #form-logout-btn {
+        width :19vw;
+        height : 4.3vh;
+    }
+    #icon-up {
+        margin-right: 3.8vw;
+    }
+    #icon-down {
+        margin-right : 3vw;
+    }
+    #confirmation-btns {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width : 370px) {
+    #confirmed-screen h4{
+        font-size : 0.7rem;
+        text-align:center;
+    }
+}
+@media screen and (max-width : 323px) {
+    #form-logout-btn {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,99 @@
+#dashboard-container {
+    background-color : black;
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width : 100vw;
+    height: 100vh;
+    color : white;
+    font-family: 'Manrope';
+    user-select: none;
+}
+#dashboard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top : 3vh;
+    margin-right: 3vw;
+}
+#dashboard-welcome-message h1{
+    font-size : 2.5rem;
+}
+#dashboard-welcome-message p {
+    font-size : 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+#dashboard-body {
+    margin-left : 3vw;
+    margin-right: 3vw;
+}
+#logout-btn {
+    color : white;
+    width :3.3vw;
+    font-family: 'Manrope';
+    height : 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color:#0088FF ;
+    color : #0088FF;
+    border-radius: 4px; 
+    cursor : pointer ;
+    padding: 1vh 3vw;
+    font-size: 1.1rem;
+    margin-right: 1vw;
+}
+#logout-btn:hover {
+    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+}
+#logout-btn:active {
+    background-color: rgba(0, 136, 255, 0.3);
+}
+#round-details {
+    display : flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top : 9vh;
+}
+@media screen and (max-width : 1223px) {
+    #dashboard-container {
+        height: max-content;
+    }
+}
+@media screen and (max-width : 1000px) {
+    #logout-btn {
+        width : 7vw;
+    }
+}
+@media screen and (max-width : 765px) {
+    #round-details {
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 640px) {
+    #logout-btn {
+        width : 10vw;
+    }
+}
+@media screen and (max-width : 560px) {
+    #dashboard-container {
+        height: max-content;
+    }
+    #logout-btn {
+        width : 15vw;
+    }
+}
+@media screen and (max-width:450px) {
+    #dashboard-welcome-message h1{
+        font-size : 2.1rem;
+    }
+    #dashboard-welcome-message p {
+        font-size : 0.9rem;
+    }
+    #logout-btn {
+        width : 18vw;
+    }
+}

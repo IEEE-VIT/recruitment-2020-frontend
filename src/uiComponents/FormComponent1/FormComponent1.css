@@ -1,0 +1,66 @@
+@font-face {
+    font-family: GothamMedium;
+    src : url('../../assets/fonts/GothamMedium.ttf');
+}
+
+#comp1-header img {
+    width : 100px;
+    height : auto;
+}
+#comp1-container {
+    height : 65vh;
+    width : 90vw;
+    color : white;
+}
+#comp1-container * {
+    box-sizing: border-box;
+    color : white;
+    font-family: GothamMedium;
+}
+#comp1-container h1 {
+    font-size: 2.9rem !important;
+    font-weight: 900;
+    margin-bottom: 3vh !important;
+    line-height: 4vh;
+}
+#comp1-container h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top : 0 !important;
+}
+#comp1-container h3 {
+    margin-top: 9vh;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#comp1-input {
+    background-color : #0088FF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width : 20%;
+    height:10%;
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
+@media screen and (max-width : 1000px) {
+    #comp1-header img {
+        width : 90px;
+    }
+}
+@media screen and (max-width : 800px) {
+    #comp1-container h1 {
+        font-size : 2.5rem;
+    }
+    #comp1-container h3 {
+        font-size : 1.1rem;
+    }
+}
+@media screen and (max-width : 450px) {
+    #comp1-container h1 {
+        font-size : 2.3rem;
+    }
+    #comp1-container h3 {
+        font-size : 1.1rem;
+    }
+}
