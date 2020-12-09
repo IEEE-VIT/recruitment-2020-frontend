@@ -3,12 +3,6 @@
     font-family : GothamMedium;
     src : url('../../assets/fonts/GothamMedium.ttf');
 }
-
-* {
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: GothamMedium;
-}
 #close-icon {
     display:none;
     position: absolute;
@@ -29,7 +23,15 @@
     background-color: white;
     box-shadow: 2px 6px 6px rgba(67, 64, 64, 0.35);
 }
+.signup-login-container * {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: GothamMedium;
+}
 #login-container {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: GothamMedium;
     display :flex;
     flex-direction: column;
     width : 22vw;

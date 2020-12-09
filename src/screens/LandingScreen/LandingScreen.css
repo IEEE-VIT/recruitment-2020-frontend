@@ -2,10 +2,6 @@
     font-family : GothamMedium;
     src : url('../../assets/fonts/GothamMedium.ttf');
 }
-* {
-    box-sizing: border-box;
-    font-family: GothamMedium;
-}
 .absolute-pos {
     position: fixed;
 }
@@ -23,6 +19,8 @@
     cursor: pointer;
   }
 #screen-container {
+    box-sizing: border-box;
+    font-family: GothamMedium;
     height : 100vh;
     display : flex;
     flex-direction : column;

@@ -20,7 +20,7 @@ function SignupComponent(props) {
         console.log("SUBMIT!");
         props.signUpUser();
     }
-    return <div>
+    return <div className="signup-login-container">
         <div id= {props.logInIndicator?"login-container":"signup-container"}>
             <div id="close-icon" onClick={props.closeComp}>
                 <CloseIcon />

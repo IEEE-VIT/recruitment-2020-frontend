@@ -20,7 +20,7 @@ function FormScreen() {
     function decrCounter() {
         setCounter(counter-1);
     }
-    return <div id="screen-container">
+    return <div id="form-screen-container">
         <div id="overlay" className={showConfirmation?'visible-comp':'invisible-comp'} onClick={()=>{!showConfirmed?setShowConfirmation(false):console.log("donothing")}}></div>
         <div id="confirmation-screen" className={showConfirmation && !showConfirmed?'visible-comp':'invisible-comp'}>
             <h2>Are you sure you want to submit ?</h2>
@@ -36,7 +36,7 @@ function FormScreen() {
         </div>
         <div id="header">
             <img src={ieee_vit_logo} />
-            <div id="logout-btn">Logout</div>
+            <div id="form-logout-btn">Logout</div>
         </div>
         <div id="form-components">
             <div className={counter===1?'visible-comp':'invisible-comp'}>

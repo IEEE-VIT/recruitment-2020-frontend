@@ -11,9 +11,9 @@ const AppRouter = () => {
 		<div>
 			<BrowserRouter>
 				<Switch>
-					<Route path = '/' component={LandingScreen} />
-					<Route path = '/form-screen' component={formScreen} />
-					<Route path = '/dashboard' component={Dashboard} />
+					<Route exact path = '/' component={LandingScreen} />
+					<Route exact path = '/form-screen' component={formScreen} />
+					<Route exact path = '/dashboard' component={Dashboard} />
 				</Switch>
 			</BrowserRouter>
 		</div>

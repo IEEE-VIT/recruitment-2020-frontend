@@ -2,11 +2,6 @@
     font-family: GothamMedium;
     src : url('../../assets/fonts/GothamMedium.ttf');
 }
-* {
-    box-sizing: border-box;
-    font-family: GothamMedium;
-    user-select :none;
-}
 #overlay {
     position: fixed;
     width: 100%;
@@ -19,7 +14,11 @@
     z-index: 2;
     cursor: pointer;
   }
-#screen-container {
+#form-screen-container {
+    box-sizing: border-box;
+    font-family: GothamMedium;
+    user-select :none;
+    color:white;
     background-color: #010101;
     height :100vh; 
     width :100vw;
@@ -30,7 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-#logout-btn {
+#form-logout-btn {
     color : white;
     width :7.3vw;
     height : 5.5vh;
@@ -46,10 +45,10 @@
     font-size: 1rem;
     margin-right: 1vw;
 }
-#logout-btn:hover {
+#form-logout-btn:hover {
     box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
 }
-#logout-btn:active {
+#form-logout-btn:active {
     background-color: rgba(0, 136, 255, 0.3);
 }
 #header {
@@ -223,7 +222,7 @@
     }
 }
 @media screen and (max-width : 920px) {
-    #logout-btn {
+    #form-logout-btn {
         width :12vw;
         height : 6vh;
         font-size:0.9rem;
@@ -280,7 +279,7 @@
     }
 }
 @media screen and (max-width : 520px) {
-    #logout-btn {
+    #form-logout-btn {
         width :18vw;
         height : 4.5vh;
         border-width: 2px;
@@ -315,7 +314,7 @@
     }
 }
 @media screen and (max-width : 420px) {
-    #logout-btn {
+    #form-logout-btn {
         width :19vw;
         height : 4.3vh;
     }
@@ -336,7 +335,7 @@
     }
 }
 @media screen and (max-width : 323px) {
-    #logout-btn {
+    #form-logout-btn {
         font-size: 0.8rem;
     }
 }
