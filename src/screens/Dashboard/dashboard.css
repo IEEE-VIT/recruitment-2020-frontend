@@ -9,11 +9,11 @@
   font-family: "Manrope";
   user-select: none;
 }
-@media screen and (max-height : 602px) {
-  #dashboard-container {
-    padding-bottom: 1vh;
-    height: max-content;
-  }
+@media screen and (max-height : 599px) {
+    #dashboard-container {
+      padding-bottom: 3vh;
+      height: max-content;
+    }
 }
 #instr-logo {
   margin-right: 30px;
