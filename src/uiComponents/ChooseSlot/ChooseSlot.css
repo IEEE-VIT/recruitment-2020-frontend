@@ -1,0 +1,295 @@
+.visible-comp {
+    display:flex !important;
+}
+.invisible-comp {
+    display:none !important;
+}
+#choose-slot {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display : flex;
+    flex-direction: column;
+    width : 485px;
+    height : 530px;
+    border-radius: 0.8rem;
+    background-color : white;
+    white-space: normal;
+}
+#choose-slot-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding : 0 1vw;
+    white-space: normal;
+    color : black;
+}
+#choose-slot-body h4{
+    font-size : 1rem;
+    padding : 0 1vw;
+}
+#choose-slot-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items : center;
+    padding : 0 2vw;
+    height : 10%;
+    border-bottom: 0.09rem black solid;
+    font-size : 1rem;
+    color : black;
+}
+#choose-slot-body h4:first-child {
+    text-align: start;
+    margin-bottom: 1vh;
+}
+#choose-slot-body h4:nth-child(2) {
+    color : #7A7A7A;
+    margin : 0.7vh 0 1vh 0.2vw ;
+    font-size : 1rem;
+}
+#choose-slot-body h4:nth-child(4) {
+    color : #7A7A7A;
+    margin : 2vh 0 1vh 0.2vw ;
+    font-size : 1rem;
+}
+#choose-slot-date {
+    display: flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.date-btn {
+    width : 94px;
+    height : 32px;
+    color : #0088FF;
+    border : 0.1rem solid #0088FF ;
+    border-radius : 0.4rem;
+    margin-left: 1vw;
+    margin-bottom: 1.5vh;
+    display :flex;
+    justify-content : center;
+    align-items  :center;
+    font-size : 1rem;
+    padding : 0.2vh 0.5vw;
+    cursor: pointer;
+}
+.date-btn:hover , .time-btn:hover {
+    box-shadow: 0px 0px 3px 1px rgba(0, 136, 255, 0.61);
+}
+.slot-btn-selected {
+    color : white !important;
+    background-color: #0088FF!important;
+}
+#choose-slot-time{
+    display: flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.time-btn {
+    width : 120px;
+    height : 32px;
+    margin-bottom: 1.5vh;
+    color : #0088FF;
+    border : 0.1rem solid #0088FF ;
+    border-radius : 0.4rem;
+    margin-left: 1vw;
+    display :flex;
+    justify-content : center;
+    align-items  :center;
+    font-size : 1rem;
+    padding : 0.1vh 0.2vw;
+    cursor : pointer;
+}
+.disabled-btn {
+    user-select: none;
+    cursor: default !important;
+    color : #B8B8B8;
+    border : 0.1rem solid #B8B8B8 ;
+}
+.disabled-btn:hover {
+    box-shadow: none !important;
+}
+#slot-confirm-btn {
+    width : 130px;
+    height : 40px;
+    padding : 0.2vh 1vw;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-size : 1rem !important;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom : 3vh;
+    background-color : #0088FF;
+    color :white;
+}
+@media screen and (max-width : 540px) {
+    #choose-slot {
+        width : 90vw;
+        height: 85vh;
+    }
+    #choose-slot h4 {
+        margin-left : 2vw !important;
+        flex-wrap: wrap;
+        white-space: normal;
+    }
+    #choose-slot-date,#choose-slot-time {
+        padding : 0 1vw;
+    }
+    .date-btn {
+        width : 90px;
+        height : 28px;
+    }
+    .time-btn {
+        width : 105px;
+        height : 28px;
+    }
+    .date-btn , .time-btn {
+        margin-left : 2vw;
+        font-size :0.9rem;
+    }
+    #slot-confirm-btn {
+        bottom : 2.5vh;
+    }
+}
+@media screen and (max-width : 540px) and (max-height : 640px) {
+    .date-btn, .time-btn {
+        margin-bottom: 0.7vh;
+    }
+    #choose-slot-body h4:nth-child(4) {
+        color : #7A7A7A;
+        margin-top : 1vh;
+    }
+    #choose-slot-body h4:first-child {
+        margin-top: 1.2vh;
+    }
+}
+@media screen and (min-width : 1515px),(min-height : 1185px) {
+    #choose-slot {
+        width : 540px;
+        height : 570px;
+    }
+}
+@media screen and (min-width : 1898px) {
+    #choose-slot-body {
+        padding-left : 0.5vw;
+    }
+}
+/*@media screen and (max-width : 1295px) {
+    #slot-confirm-btn {
+        font-size : 0.9rem !important;
+    }
+}*/
+/*@media screen and (max-width : 1223px) {
+    #choose-slot {
+        width : 35vw;
+        height : 70vh;
+    }
+}*/
+/*@media screen and (max-width : 1152px) {
+    #choose-slot {
+        width : 40vw;
+        height : 74vh;
+    }
+    .date-btn {
+        width : 8vw;
+        height : 4.2vh;
+    }
+    #slot-confirm-btn {
+        width : 12vw;
+        height : 5vh;
+    }
+}
+@media screen and (max-width : 945px) {
+    .time-btn {
+        width : 9vw;
+        height : 4vh;
+    }
+}
+@media screen and (max-width : 860px) {
+    #choose-slot {
+        width : 53vw;
+        height : 78vh;
+    }
+    .date-btn {
+        width : 13vw;
+        height : 4.3vh;
+    }
+    .time-btn {
+        width : 13vw;
+        height : 4.3vh;
+    }
+    #slot-confirm-btn {
+        width : 18vw;
+        height : 5.1vh;
+    }
+}
+@media screen and (max-width : 660px)  {
+    #slot-selection h4, #slot-display h4 {
+        font-size : 0.9rem;
+    }
+}
+@media screen and (max-width : 560px) {
+    #slot-confirm-btn {
+        width : 20vw;
+        height : 5.1vh;
+    }
+}
+@media screen and (max-width : 540px) {
+    #choose-slot {
+        height : 100vh ;
+        width: 100vw;
+        border-radius: 0;
+    }
+    #slot-confirm-btn {
+        position : absolute;
+        bottom : 4vh;
+        width : 25vw;
+    }
+    #choose-slot-body {
+        padding : 0 2vw;
+    }
+    #choose-slot-body h4{
+        padding : 0 2vw;
+    }
+    #choose-slot-header {
+        padding : 0 2vw;
+    }
+    #choose-slot-body h4:nth-child(2) {
+        margin : 0.7vh 0 3vh 0.4vw ;
+    }
+    #choose-slot-body h4:nth-child(4) {
+        margin : 2vh 0 3vh 0.4vw ;
+    }
+    .date-btn {
+        width : 19vw;
+        height : 4.3vh;
+        margin-left :2vw;
+        margin-bottom : 2vh;
+    }
+    .time-btn {
+        width : 19vw;
+        height : 4.3vh;
+        margin-left : 2vw;
+    }
+}
+@media screen and (max-width : 415px) {
+    #slot-confirm-btn {
+        width : 39vw;
+    }
+}
+@media screen and (max-width : 401px) {
+    .time-btn {
+        width : 26vw;
+    }
+    .date-btn {
+        width : 26vw;
+    }
+}*/

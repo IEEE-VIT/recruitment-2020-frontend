@@ -1,0 +1,43 @@
+@font-face {
+  font-family: GothamMedium;
+  src: url("../../assets/fonts/GothamMedium.ttf");
+}
+.comp4-visible-comp {
+  display: inline !important;
+}
+.invisible-comp {
+  display: none !important;
+}
+#comp4-container {
+  height: 65vh;
+  width: 90vw;
+}
+#comp4-container * {
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+#comp4-container h3 {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  line-height: 4vh;
+}
+#comp4-inp {
+  background-color: #0088ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 10%;
+  margin-top: 8vh;
+  margin-left: 3vh;
+}
+@media screen and (max-width: 800px) {
+  #comp4-container h3 {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  #comp4-container h3 {
+    font-size: 1.1rem !important;
+  }
+}

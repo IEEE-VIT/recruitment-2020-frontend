@@ -1,5 +1,5 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default axios.create({
-    baseURL: 'https://recruitment2020backend.herokuapp.com/',
+  baseURL: process.env.REACT_APP_BACKEND_URL,
 });

@@ -1,152 +1,223 @@
 /* need to add fonts*/
 @font-face {
-    font-family : GothamMedium;
-    src : url('../../assets/fonts/GothamMedium.ttf');
+  font-family: GothamMedium;
+  src: url("../../assets/fonts/GothamMedium.ttf");
 }
 #close-icon {
-    display:none;
-    position: absolute;
-    top:6vh;
-    right: 6.5vw;
+  display: none;
+  position: absolute;
+  top: 6vh;
+  right: 6.5vw;
 }
 #signup-container {
-    display :flex;
-    flex-direction: column;
-    width : 22vw;
-    height : 66.7vh;
-    align-items : center;
-    justify-content: flex-start;
-    padding-top : 2.5vh;
-    color: #626161;
-    padding-bottom: 5vh;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 2px 6px 6px rgba(67, 64, 64, 0.35);
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 66.7vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2.5vh;
+  color: #626161;
+  padding-bottom: 5vh;
+  border-radius: 10px;
+  background-color: white;
 }
 .signup-login-container * {
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: GothamMedium;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Manrope";
+}
+#outlined-basic {
+  user-select: text;
 }
 #login-container {
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: GothamMedium;
-    display :flex;
-    flex-direction: column;
-    width : 22vw;
-    height : 66.7vh;
-    align-items : center;
-    justify-content: flex-start;
-    color: #626161;
-    padding-top : 2.5vh;
-    padding-bottom: 5vh;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 2px 6px 6px rgba(67, 64, 64, 0.35);
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Manrope";
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 66.7vh;
+  align-items: center;
+  justify-content: flex-start;
+  color: #626161;
+  padding-top: 2.5vh;
+  padding-bottom: 5vh;
+  border-radius: 10px;
+  background-color: white;
 }
 #signup-header {
-    display : flex;
-    width : 100%;
-    flex-direction : row;
-    align-items: center;
-    justify-content : space-around;
-    padding : 0 2vw;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2vw;
 }
 #signup-header h4 {
-    font-size : 1.15rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
 }
 .signup-elements {
-    margin-top: 2vh !important;
-    width : 74.7%;
-    font-family: Roboto;
+  margin-top: 2vh !important;
+  width: 74.7%;
+  font-family: Roboto;
 }
 #submit-button {
-    margin-top: 6vh !important;
-    display : flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width : 43%;
-    background-color: #0088FF;
-    color : white;
-    padding : 1.4vh 2vw;
-    border-radius: 6px;
-    cursor: pointer;
+  margin-top: 6vh !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 43%;
+  background-color: #0088ff;
+  color: white;
+  padding: 1.4vh 2vw;
+  border-radius: 6px;
+  cursor: pointer;
+  justify-self: flex-end;
+  margin-bottom: 2vh;
+}
+.disabled-submit-btn {
+  background-color: #0578DC !important;
+  cursor : default !important;
+}
+.disabled-submit-btn:hover {
+  background-color: #0578DC !important;
+  box-shadow: 0px 0px 0px 0px !important;
+}
+.disabled-submit-btn:active {
+  background-color: #0578DC;
+  box-shadow: 0 0 0 0;
 }
 .disappear {
-    display: none;
+  display: none;
 }
 #submit-button:hover {
-    background-color : #1F96FF;
-    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+  background-color: #1f96ff;
+  box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
 }
 #submit-button:active {
-    background-color: #0578DC;
-    box-shadow : 0 0 0 0;
+  background-color: #0578dc;
+  box-shadow: 0 0 0 0;
 }
 .thisison {
-    color :  #0088FF ;
-    border-bottom: 2px solid #0088FF;
-    padding-bottom: 0.5vh;
-    cursor : pointer;
+  color: #0088ff;
+  border-bottom: 2px solid #0088ff;
+  padding-bottom: 1vh;
+  cursor: pointer;
 }
 .thisisoff {
-    color :  #656565;
-    text-decoration: none;
-    padding-bottom: 0.5vh;
-    cursor : pointer;
+  color: #7a7a7a;
+  text-decoration: none;
+  padding-bottom: 1vh;
+  cursor: pointer;
 }
 #forgot-password {
-    margin-top : 4vh;
-    font-size : 1rem;
+  margin-top: 2.5vh;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  margin-left: 2.7vw;
+  color: #7a7a7a;
 }
-#forgot-password span {
- cursor: pointer;
+#forgot-password a {
+  font-size: 0.9rem;
+  cursor: pointer;
 }
-@media screen and (max-width: 1126px){
-    #signup-container,#login-container {
-        width : 25vw;
-    }
+@media screen and (max-width: 1126px) {
+  #signup-container,
+  #login-container {
+    width: 25vw;
+  }
 }
-@media screen and (max-width: 1024px){
-    #signup-container, #login-container {
-        width : 35vw;
-        height: 65vh;
-        padding-top : 1.2vh;
-    }
+@media screen and (max-width: 1024px) {
+  #signup-container,
+  #login-container {
+    width: 35vw;
+    height: 65vh;
+    padding-top: 1.2vh;
+  }
+  #forgot-password {
+    margin-left: 4.5vw;
+  }
 }
-@media screen and (max-width: 860px){
-    #signup-container, #login-container {
-        width : 40vw;
-        height: 65vh;
-    }
+@media screen and (max-width: 860px) {
+  #signup-container,
+  #login-container {
+    width: 40vw;
+    height: 65vh;
+  }
+  #forgot-password {
+    margin-left: 4.8vw;
+  }
 }
-@media screen and (max-width: 772px){
-    #signup-container, #login-container {
-        width : 50vw;
-        height: 65vh;
-    }
+@media screen and (max-width: 772px) {
+  #signup-container,
+  #login-container {
+    width: 50vw;
+    height: 65vh;
+  }
+  #forgot-password {
+    margin-left: 6.1vw;
+  }
 }
-@media screen and (max-width: 540px){
-    #close-icon{
-        display:inline-block;
-    }
-    #signup-container, #login-container  {
-        width : 100vw;
-        height:100vh;
-        font-size:1.4rem !important;
-        border-radius: 0;
-        padding-top : 19.5vh;
-    }
-    #signup-header {
-        padding : 0 12vw;
-    }
-    #submit-button {
-        width : 30%;
-    }
+@media screen and (max-width: 590px) {
+  #signup-container,
+  #login-container {
+    width: 60vw;
+    height: 65vh;
+  }
 }
-
+@media screen and (max-width: 505px) {
+  #signup-container,
+  #login-container {
+    width: 70vw;
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 417px) and (max-height: 624px) {
+  .signup-elements {
+    margin-top: 5px !important;
+  }
+}
+@media screen and (min-width: 417px) and (max-height: 580px) {
+  .signup-elements {
+    margin-top: 2px !important;
+  }
+}
+@media screen and (max-width: 416px) {
+  #close-icon {
+    display: inline-block;
+  }
+  #signup-container,
+  #login-container {
+    position: fixed;
+    border-radius: 0.8rem !important;
+    top: 10vh;
+    left: 3vw;
+    width: 94vw;
+    height: 80vh;
+    font-size: 1.4rem !important;
+    border-radius: 0;
+    padding-top: 5vh;
+    overflow-y: scroll;
+  }
+  #signup-container::-webkit-scrollbar,#login-container::-webkit-scrollbar {
+    display: none;
+  }
+  #signup-header {
+    padding: 0 12vw;
+  }
+  #submit-button {
+    width: 30%;
+  }
+  #forgot-password {
+    margin-left: 11.5vw;
+  }
+}
 /*@media screen and (max-width: 990px){
     #signup-container {
         width : 28vw;

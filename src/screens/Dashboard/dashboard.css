@@ -1,99 +1,142 @@
 #dashboard-container {
-    background-color : black;
-    display : flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width : 100vw;
-    height: 100vh;
-    color : white;
-    font-family: 'Manrope';
-    user-select: none;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Manrope";
+  user-select: none;
+}
+@media screen and (max-height : 602px) {
+  #dashboard-container {
+    padding-bottom: 1vh;
+    height: max-content;
+  }
+}
+#instr-logo {
+  margin-right: 30px;
+  align-self: center;
+  margin-top: 0.5vh;
+  cursor: pointer;
+  border-radius: 20px;
+}
+@media screen and (max-height : 705px) {
+  #instr-logo {
+    margin-top : 0.25vh;
+  }
+}
+#instr-logo img {
+  width: 35px;
+  height: 35px;
+}
+#instruction-body {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  border-radius: 0.8rem;
+  background-color: white;
 }
 #dashboard-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top : 3vh;
-    margin-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 3vh;
+  margin-right: 3vw;
 }
-#dashboard-welcome-message h1{
-    font-size : 2.5rem;
+#dashboard-welcome-message h1 {
+  font-size: 2.5rem;
 }
 #dashboard-welcome-message p {
-    font-size : 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
 }
 #dashboard-body {
-    margin-left : 3vw;
-    margin-right: 3vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 #logout-btn {
-    color : white;
-    width :3.3vw;
-    font-family: 'Manrope';
-    height : 3vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-width: 3px;
-    border-style: solid;
-    border-color:#0088FF ;
-    color : #0088FF;
-    border-radius: 4px; 
-    cursor : pointer ;
-    padding: 1vh 3vw;
-    font-size: 1.1rem;
-    margin-right: 1vw;
+  color: white;
+  width: 3.3vw;
+  font-family: "Manrope";
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0088ff;
+  color: #0088ff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 1vh 3vw;
+  font-size: 1.1rem;
+  margin-right: 1vw;
 }
 #logout-btn:hover {
-    box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(31, 150, 255, 0.6);
 }
 #logout-btn:active {
-    background-color: rgba(0, 136, 255, 0.3);
+  background-color: rgba(0, 136, 255, 0.3);
 }
 #round-details {
-    display : flex ;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top : 9vh;
+  /* min-width: 1000px; */
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto !important;
+  margin-top: 9vh;
+  scrollbar-width: thin;
+  scrollbar-color: #0088ff #2f2f2f;
 }
-@media screen and (max-width : 1223px) {
-    #dashboard-container {
-        height: max-content;
-    }
+
+::-webkit-scrollbar {
+  height: 7px;
+  -webkit-appearance: none;
+  background-color: #2f2f2f;
 }
-@media screen and (max-width : 1000px) {
-    #logout-btn {
-        width : 7vw;
-    }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
 }
-@media screen and (max-width : 765px) {
-    #round-details {
-        justify-content: center;
-    }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #0088ff;
 }
-@media screen and (max-width : 640px) {
-    #logout-btn {
-        width : 10vw;
-    }
+
+@media screen and (max-width: 1000px) {
+  #logout-btn {
+    width: 7vw;
+  }
 }
-@media screen and (max-width : 560px) {
-    #dashboard-container {
-        height: max-content;
-    }
-    #logout-btn {
-        width : 15vw;
-    }
+@media screen and (max-width: 640px) {
+  #logout-btn {
+    width: 10vw;
+  }
 }
-@media screen and (max-width:450px) {
-    #dashboard-welcome-message h1{
-        font-size : 2.1rem;
-    }
-    #dashboard-welcome-message p {
-        font-size : 0.9rem;
-    }
-    #logout-btn {
-        width : 18vw;
-    }
+@media screen and (max-width: 560px) {
+  #logout-btn {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  #dashboard-welcome-message h1 {
+    font-size: 2.1rem;
+  }
+  #dashboard-welcome-message p {
+    font-size: 0.9rem;
+  }
+  #logout-btn {
+    width: 18vw;
+  }
 }
