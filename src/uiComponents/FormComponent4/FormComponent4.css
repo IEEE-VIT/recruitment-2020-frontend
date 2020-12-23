@@ -2,6 +2,39 @@
   font-family: GothamMedium;
   src: url("../../assets/fonts/GothamMedium.ttf");
 }
+.form-comp4-input-field {
+  background-color: #0f0f0f;
+  user-select :text;
+  border: 0;
+  outline: none !important;
+  color: #dadada !important;
+  border-bottom: 1px #0088ff solid;
+  padding: 1.5vh 1.2vw;
+  font-size: 1rem;
+  font-family: "Manrope";
+  width: 360px;
+  max-height: 200px;
+  border-radius: 0.1rem;
+  margin-top: 3vh;
+  margin-left: 1vw;
+  resize: vertical;
+}
+.form-comp4-input-field::-webkit-scrollbar {
+  width: 8px;
+  background-color: #2F2F2F; }
+
+.form-comp4-input-field::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #4285F4;
+  cursor: pointer; }
+
+.form-comp4-input-field::-webkit-resizer {
+    border: 0px ;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
 .comp4-visible-comp {
   display: inline !important;
 }
@@ -39,5 +72,13 @@
 @media screen and (max-width: 450px) {
   #comp4-container h3 {
     font-size: 1.1rem !important;
+  }
+  .form-comp4-input-field{
+    max-height: 120px;
+  }
+}
+@media screen and (max-width :426px) {
+  .form-comp4-input-field{
+    width : 85vw;
   }
 }

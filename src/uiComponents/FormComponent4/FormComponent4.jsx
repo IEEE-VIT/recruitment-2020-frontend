@@ -45,13 +45,14 @@ const FormComponent4 = ({
           *
         </span>
       </h3>
-      <input
+      <textarea
         type="text"
         value={answer}
-        placeholder="Your answer"
+        rows={3}
+        placeholder="Enter your answer here..."
         onChange={(newAns) => changeAnswer(newAns.target.value)}
-        className="form-comp-input-field"
-      />
+        className="form-comp4-input-field"
+      ></textarea>
     </div>
   );
 };

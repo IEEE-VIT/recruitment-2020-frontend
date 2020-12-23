@@ -102,13 +102,13 @@ const FormScreen = () => {
     // eslint-disable-next-line
   }, []);
   function onKeyDownFunction(e) {
-    if (e.key === "ArrowUp") {
+    /*if (e.key === "ArrowUp") {
       decrCounter();
     } else if (e.key === "ArrowDown") {
       incrCounter();
-    } else if (e.key === "Enter") {
+    } if (e.key === "Enter") {
       incrCounter();
-    }
+    } ---disbled because uparrow,downarrow,enter all are used in the multilineanswrrs*/
   }
   function finalSubmit() {
     setLoading(true);
@@ -252,7 +252,7 @@ const FormScreen = () => {
             answers[i]["quid"].toString() ===
             questions[counter - 4]["quid"].toString()
           ) {
-            if (answers[i]["answer"] !== "") {
+            if (answers[i]["answer"].trim().length!==0) {
               goForward = true;
             }
             break;
