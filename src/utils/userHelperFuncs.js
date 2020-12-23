@@ -2,6 +2,7 @@
 import instance from "../apis/recruitmentApi";
 import { toast } from "react-toastify";
 import { useCookies } from "react-cookie";
+//testingmain
 export async function toastError(errorMessage) {
   toast.dark(errorMessage, {
     position: "top-center",
