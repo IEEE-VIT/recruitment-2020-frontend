@@ -106,7 +106,7 @@ const Dashboard = (props) => {
         // console.log(data.round0Status);
         if (!data.round0Status) {
           setLoadingScreen(false);
-          return history.push("/form-screen");
+          return history.push("/form");
         }
         // console.log("dashboard", data);
         setName(data.user.name);
@@ -338,7 +338,7 @@ const Dashboard = (props) => {
 
           {/* <InterviewReady /> */}
           {prev ? <Redirect push to="/" /> : null}
-          {goToForm ? <Redirect push to="/form-screen" /> : null}
+          {goToForm ? <Redirect push to="/form" /> : null}
           {!showInstr ? null : (
             <Instructions setShowInstr={setShowInstr} showInstr={showInstr} />
           )}

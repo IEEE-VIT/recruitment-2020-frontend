@@ -19,7 +19,7 @@ const AppRouter = () => {
         <Switch>
           <ProtectedRoute
             exact
-            path="/form-screen"
+            path="/form"
             component={formScreen}
             redirect="/"
           />
