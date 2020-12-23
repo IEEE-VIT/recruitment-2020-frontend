@@ -78,61 +78,64 @@ const Instructions = ({ setShowInstr, showInstr = true }) => {
         Instructions
       </DialogTitle>
       <DialogContent dividers>
-        <Typography>
-          - Please ensure to read all the instruction before you sit for your
+        <ul style={{"padding-left": "15px"}}>
+          <li>
+          Please ensure to read all the instruction before you sit for your
           recruitment process.
-        </Typography>
-        <Typography>
-          - Do not disclose any information regarding any rounds upon
+          </li>
+          <li>
+          Do not disclose any information regarding any rounds upon
           completion.
-        </Typography>
-        <Typography>
-          - Do not disclose any information regarding the tasks given to you.
-        </Typography>
-        <Typography>
-          - Any evidence found of the above will result in immediate
+          </li>
+          <li>
+          Do not disclose any information regarding the tasks given to you.
+          </li>
+          <li>
+          Any evidence found of the above will result in immediate
           disqualification.
-        </Typography>
-        <Typography>
-          - Extension of project deadlines and rescheduling of slots will not be
+          </li>
+          <li>
+          Extension of project deadlines and rescheduling of slots will not be
           encouraged under any circumstances.
-        </Typography>
-        <Typography>
-          - Videos must be kept on during all rounds of the recruitment process.
+          </li>
+          <li>
+          Videos must be kept on during all rounds of the recruitment process.
           Kindly take necessary measures to ensure this. Failing to do so will
           result in immediate disqualification.
-        </Typography>
-        <Typography>
-          - Please ensure while attending the interviews to have a stable
-          internet connection and minimum background noise.
-        </Typography>
-        <Typography>
-          - DO NOT contact us on our socials to know your progress. All progress
+          </li>
+          <li>
+          DO NOT contact us on our socials to know your progress. All progress
           updates will be visible to you on the portal. Please use the chatbot
           to ask any queries.
-        </Typography>
-        <Typography>
-          - In case of any immediate need of information or update we will
+          </li>
+          <li>
+          In case of any immediate need of information or update we will
           contact you via your phone number or email address. KEEP CHECKING FOR
           UPDATES.
-        </Typography>
-        <Typography>
-          - Clicking "I am ready" or ant similar button is just you let the
+          </li>
+          <li>
+          Clicking "I am ready" or a similar button is just to let the
           interviewer know you are ready. You will receive the link via email
           when an interviewer is free and ready to take your interview. Please
           keep checking your mail for that duration.
-        </Typography>
-        <Typography>
-          - Any misbehavior or misconduct of any sort will be dealt with extreme
+          </li>
+          <li>
+          In case of any immediate need of information or update we will
+          contact you via your phone number or email address. KEEP CHECKING FOR
+          UPDATES.
+          </li>
+          <li>
+          Any misbehavior or misconduct of any sort will be dealt with extreme
           seriousness.
-        </Typography>
-        <Typography>
-          - Use of any unparliamentary or foul language will not be tolerated.
-        </Typography>
-        <Typography>
-          - We have the right to reject or disqualify any participant and no
+          </li>
+          <li>
+          Use of any unparliamentary or foul language will not be tolerated.
+          </li>
+          <li>
+          We have the right to reject or disqualify any participant and no
           complaints or queries regarding the same will be entertained.
-        </Typography>
+          </li>
+        </ul>
       </DialogContent>
       <DialogActions></DialogActions>
     </Dialog>

@@ -84,13 +84,13 @@ export async function signUpUser(
         setLoading(false);
         return;
       }
-      if (!emailRegex.test(email)) {
+      /*if (!emailRegex.test(email)) {
         toastError(
           "Please ensure you are a fresher and are using your vit email id!"
         );
         setLoading(false);
         return;
-      }
+      }*/
       if (pass.length < 8) {
         toastError("The password must be atleast 8 characters long!");
         setLoading(false);
