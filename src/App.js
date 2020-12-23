@@ -29,7 +29,7 @@ const AppRouter = () => {
             redirect="/"
             component={Dashboard}
           />
-          <ProtectedRoute
+          <Route
             exact
             path="/instructions"
             redirect="/"

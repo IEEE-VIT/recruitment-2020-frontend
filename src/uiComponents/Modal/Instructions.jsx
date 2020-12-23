@@ -78,64 +78,62 @@ const Instructions = ({ setShowInstr, showInstr = true }) => {
         Instructions
       </DialogTitle>
       <DialogContent dividers>
-        <ul style={{"padding-left": "15px"}}>
-          <li>
+        <ol style={{ "padding-left": "20px" }}>
           Please ensure to read all the instruction before you sit for your
           recruitment process.
+          <li style={{ "padding-top": "15px" }}>
+            Do not disclose any information regarding any rounds upon
+            completion.
           </li>
-          <li>
-          Do not disclose any information regarding any rounds upon
-          completion.
+          <li style={{ "padding-top": "7px" }}>
+            Do not disclose any information regarding the tasks given to you.
           </li>
-          <li>
-          Do not disclose any information regarding the tasks given to you.
+          <li style={{ "padding-top": "7px" }}>
+            Any evidence found of the above will result in immediate
+            disqualification.
           </li>
-          <li>
-          Any evidence found of the above will result in immediate
-          disqualification.
+          <li style={{ "padding-top": "7px" }}>
+            Extension of project deadlines and rescheduling of slots will not be
+            encouraged under any circumstances.
           </li>
-          <li>
-          Extension of project deadlines and rescheduling of slots will not be
-          encouraged under any circumstances.
+          <li style={{ "padding-top": "7px" }}>
+            Videos must be kept on during all rounds of the recruitment process.
+            Kindly take necessary measures to ensure this. Failing to do so will
+            result in immediate disqualification.
           </li>
-          <li>
-          Videos must be kept on during all rounds of the recruitment process.
-          Kindly take necessary measures to ensure this. Failing to do so will
-          result in immediate disqualification.
+          <li style={{ "padding-top": "7px" }}>
+            DO NOT contact us on our socials to know your progress. All progress
+            updates will be visible to you on the portal. Please use the chatbot
+            to ask any queries.
           </li>
-          <li>
-          DO NOT contact us on our socials to know your progress. All progress
-          updates will be visible to you on the portal. Please use the chatbot
-          to ask any queries.
+          <li style={{ "padding-top": "7px" }}>
+            In case of any immediate need of information or update we will
+            contact you via your phone number or email address. KEEP CHECKING
+            FOR UPDATES.
           </li>
-          <li>
-          In case of any immediate need of information or update we will
-          contact you via your phone number or email address. KEEP CHECKING FOR
-          UPDATES.
+          <li style={{ "padding-top": "7px" }}>
+            Clicking "I am ready" or a similar button is just to let the
+            interviewer know you are ready. You will receive the link via email
+            when an interviewer is free and ready to take your interview. Please
+            keep checking your mail for that duration.
           </li>
-          <li>
-          Clicking "I am ready" or a similar button is just to let the
-          interviewer know you are ready. You will receive the link via email
-          when an interviewer is free and ready to take your interview. Please
-          keep checking your mail for that duration.
+          <li style={{ "padding-top": "7px" }}>
+            In case of any immediate need of information or update we will
+            contact you via your phone number or email address. KEEP CHECKING
+            FOR UPDATES.
           </li>
-          <li>
-          In case of any immediate need of information or update we will
-          contact you via your phone number or email address. KEEP CHECKING FOR
-          UPDATES.
+          <li style={{ "padding-top": "7px" }}>
+            Any misbehavior or misconduct of any sort will be dealt with extreme
+            seriousness.
           </li>
-          <li>
-          Any misbehavior or misconduct of any sort will be dealt with extreme
-          seriousness.
+          <li style={{ "padding-top": "7px" }}>
+            Use of any unparliamentary or foul language will not be tolerated.
           </li>
-          <li>
-          Use of any unparliamentary or foul language will not be tolerated.
+          <li style={{ "padding-top": "7px" }}>
+            We have the right to reject or disqualify any participant and no
+            complaints or queries regarding the same will be entertained.
           </li>
-          <li>
-          We have the right to reject or disqualify any participant and no
-          complaints or queries regarding the same will be entertained.
-          </li>
-        </ul>
+        </ol>
       </DialogContent>
       <DialogActions></DialogActions>
     </Dialog>
