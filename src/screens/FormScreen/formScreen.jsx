@@ -369,7 +369,7 @@ const FormScreen = () => {
             mandatory={true}
             setPhNo={(newPhNo) => setPhNo(newPhNo)}
             compno={counter}
-            question="Hey, I would like to see more of you! Can i get your number?"
+            question="Please enter your phone number."
           />
         </div>
         <div className={counter === 3 ? "visible-comp" : "invisible-comp"}>

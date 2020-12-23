@@ -357,14 +357,6 @@ const FormComponent2 = ({
           App Development
         </div>
         <div
-          className={classNames[4]}
-          onClick={() => {
-            addDomain("UI/UX");
-          }}
-        >
-          UI/UX Design
-        </div>
-        <div
           className={classNames[5]}
           onClick={() => {
             addDomain("CyberSecurity");
@@ -381,6 +373,14 @@ const FormComponent2 = ({
           Electronics
         </div>
         <div
+          className={classNames[9]}
+          onClick={() => {
+            addDomain("AR/VR");
+          }}
+        >
+          AR
+        </div>
+        <div
           className={classNames[7]}
           onClick={() => {
             addDomain("VFX");
@@ -394,15 +394,15 @@ const FormComponent2 = ({
             addDomain("GraphicDesign");
           }}
         >
-          Graphic Designing
+          Graphic Design
         </div>
         <div
-          className={classNames[9]}
+          className={classNames[4]}
           onClick={() => {
-            addDomain("AR/VR");
+            addDomain("UI/UX");
           }}
         >
-          AR
+          UI/UX Design
         </div>
         <div
           className={classNames[10]}
@@ -410,7 +410,7 @@ const FormComponent2 = ({
             addDomain("  3D");
           }}
         >
-          3D Designing
+          3D Design
         </div>
       </div>
       <div id="error-message">{error}</div>
