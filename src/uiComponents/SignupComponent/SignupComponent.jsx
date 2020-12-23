@@ -168,12 +168,14 @@ const SignupComponent = ({
           )}
         </div>
       </div>
-      <ReCAPTCHA
-        ref={recaptchaRef}
-        size="invisible"
-        sitekey={process.env.REACT_APP_SITE_KEY}
-        theme="dark"
-      />
+      <div style={{ display: "none" }}>
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey={process.env.REACT_APP_SITE_KEY}
+          theme="dark"
+        />
+      </div>
     </div>
   );
 };
