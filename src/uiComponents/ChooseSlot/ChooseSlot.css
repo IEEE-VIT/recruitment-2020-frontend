@@ -12,8 +12,8 @@
     z-index: 3;
     display : flex;
     flex-direction: column;
-    width : 485px;
-    height : 530px;
+    width : 495px;
+    height : 560px;
     border-radius: 0.8rem;
     background-color : white;
     white-space: normal;
@@ -88,7 +88,15 @@
     flex-direction : row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    max-height: 52%;
+    overflow-y: auto;
 }
+@media screen and (max-width : 440px){
+    #choose-slot-time{
+        max-height :36%;
+    }
+}
+
 .time-btn {
     width : 120px;
     height : 32px;
@@ -126,7 +134,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom : 3vh;
+    bottom : 2.2vh;
     background-color : #0088FF;
     color :white;
 }
@@ -173,8 +181,8 @@
 }
 @media screen and (min-width : 1515px),(min-height : 1185px) {
     #choose-slot {
-        width : 540px;
-        height : 570px;
+        width : 580px;
+        height : 620px;
     }
 }
 @media screen and (min-width : 1898px) {
