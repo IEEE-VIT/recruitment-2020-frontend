@@ -176,7 +176,7 @@ const LandingScreen = () => {
         </div>
       </div>
       <div id="register-btn" onClick={toggleVisibleComp}>
-        Register Now
+        Continue
       </div>
       <div id="social-media-handles">
         <a

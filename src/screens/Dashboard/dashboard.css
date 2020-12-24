@@ -31,13 +31,13 @@
   width: 35px;
   height: 35px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   #instr-logo {
-    margin-top: 0.3vh;
+    margin-top: 0.52vh;
   }
   #instr-logo img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 }
 #instruction-body {
