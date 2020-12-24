@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./LandingScreen.css";
 import { useCookies } from "react-cookie";
-import instance from "../../apis/recruitmentApi";
 import ieee_vit_logo from "../../assets/ieee_vit_logo.svg";
 import mail_logo from "../../assets/mail_logo.svg";
 import twitter_logo from "../../assets/twitter_logo.svg";
@@ -10,9 +9,9 @@ import github_logo from "../../assets/github_logo.svg";
 import facebook_logo from "../../assets/facebook_logo.svg";
 import linkedin_logo from "../../assets/linkedin_logo.svg";
 import SignupComponent from "../../uiComponents/SignupComponent/SignupComponent";
-import { signUpUser, toastError } from "../../utils/userHelperFuncs";
+import { signUpUser } from "../../utils/userHelperFuncs";
 import { ToastContainer } from "react-toastify";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 const LandingScreen = () => {
@@ -26,7 +25,6 @@ const LandingScreen = () => {
   const [signUpIndicator, setSignUpIndicator] = useState(true);
   const [logInIndicator, setLogInIndicator] = useState(false);
   const [cookies, setCookie, removeCookie] = useCookies(["token"]);
-  const [next, setNext] = useState(false);
   const [goToForm, setGoToForm] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
 
@@ -48,27 +46,15 @@ const LandingScreen = () => {
     // eslint-disable-next-line
   }, [recaptchaToken]);
 
-  useEffect(() => {
-    if (cookies.token !== "undefined" && cookies.token !== undefined) {
-      const checkFilled = async () => {
-        instance
-          .get("/api/r0/filledwhy", {
-            headers: { Authorization: `Bearer ${cookies.token}` },
-          })
-          .then((response) => {
-            if (!response.data.data) {
-              setGoToForm(true);
-            } else {
-              setNext(true);
-            }
-          })
-          .catch(() => {
-            toastError("Something went wrong! Please Try Again!");
-          });
-      };
-      checkFilled();
-    }
-  }, [cookies.token]);
+  const history = useHistory();
+
+  if (
+    cookies.token !== undefined &&
+    cookies.token !== null &&
+    cookies.token !== "undefined"
+  ) {
+    history.push("/dashboard");
+  }
 
   function toggleVisibleComp() {
     setVisibleComp(!visibleComp);
@@ -235,7 +221,6 @@ const LandingScreen = () => {
         />
       </div>
       {goToForm ? <Redirect push to="/form" /> : null}
-      {next ? <Redirect push to="/coming-soon" /> : null}
     </div>
   );
 };
