@@ -49,6 +49,7 @@ const FormComponent4 = ({
         type="text"
         value={answer}
         rows={3}
+        maxlength="1900"
         placeholder="Enter your answer here..."
         onChange={(newAns) => changeAnswer(newAns.target.value)}
         className="form-comp4-input-field"
