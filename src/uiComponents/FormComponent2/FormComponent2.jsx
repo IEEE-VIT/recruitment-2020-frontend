@@ -323,6 +323,7 @@ const FormComponent2 = ({
       <h3>
         3. Choose your preferred domains.<span style={{ color: "red" }}>*</span>
       </h3>
+      <p style={{"font-size":"0.8rem","letter-spacing" :"0.01rem","margin-top":"0rem","margin-left":"0.1rem"}}>The recruitment process will be based on the domains you'll select below, choose the domains accordingly.</p>
       <div id="domains-container">
         <div
           className={classNames[0]}
