@@ -123,11 +123,13 @@ const Dashboard = (props) => {
           setRound1Date(data.slots.round1.date);
         }
 
-        if (data.project && data.project.puid && data.project.puid !== 1) {
-          // console.log("project dedo");
-          setRound2NonMgmtStatus("RD");
-          setRound2TechProjectLink(data.user.projectLink);
-          setRound2TechProjectTitle(data.project.title);
+        if (data.round2NonMgmtStatus.match(/^(RD|LD)$/)) {
+          if (data.project && data.project.puid && data.project.puid !== 1) {
+            // console.log("project dedo");
+            setRound2NonMgmtStatus("RD");
+            setRound2TechProjectLink(data.user.projectLink);
+            setRound2TechProjectTitle(data.project.title);
+          }
         }
 
         if (data.round2NonMgmtStatus === "RD") {

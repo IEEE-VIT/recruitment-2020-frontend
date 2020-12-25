@@ -68,7 +68,7 @@ const StaticDashboardCard = ({ roundNo = 0, status = "RR" }) => {
       ) : status === "AR" ? (
         <div className={classes.cardContent}>
           <img className={classes.cardImg} src={check} alt="check" />
-          <Typography className={classes.checkText}>CLEARED</Typography>
+          <Typography className={classes.checkText}>Cleared</Typography>
         </div>
       ) : status === "PR" ? (
         <div className={classes.cardContent}>

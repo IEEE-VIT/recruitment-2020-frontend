@@ -79,27 +79,30 @@ const Instructions = ({ setShowInstr, showInstr = true }) => {
       </DialogTitle>
       <DialogContent dividers>
         <ol style={{ "padding-left": "20px" }}>
-          Please ensure to read all the instruction before you sit for your
-          recruitment process.
+          <b>
+            Please ensure to read all the instruction before you sit for your
+            recruitment process.
+          </b>
           <li style={{ "padding-top": "15px" }}>
-            Do not disclose any information regarding any rounds upon
-            completion.
-          </li>
-          <li style={{ "padding-top": "7px" }}>
-            Do not disclose any information regarding the tasks given to you.
-          </li>
-          <li style={{ "padding-top": "7px" }}>
-            Any evidence found of the above will result in immediate
-            disqualification.
-          </li>
-          <li style={{ "padding-top": "7px" }}>
-            Extension of project deadlines and rescheduling of slots will not be
-            encouraged under any circumstances.
+            Do not disclose any information regarding any rounds or the tasks
+            upon completion.
           </li>
           <li style={{ "padding-top": "7px" }}>
             Videos must be kept on during all rounds of the recruitment process.
-            Kindly take necessary measures to ensure this. Failing to do so will
-            result in immediate disqualification.
+            Kindly take the necessary measures to ensure this.
+          </li>
+          <li style={{ "padding-top": "7px" }}>
+            Any misbehavior or misconduct of any sort will be dealt with extreme
+            seriousness.
+          </li>
+          <li style={{ "padding-top": "7px" }}>
+            Any evidence found of the above will result in immediate
+            disqualification. - Extension of project deadlines and rescheduling
+            of slots will not be encouraged under any circumstances.
+          </li>
+          <li style={{ "padding-top": "7px" }}>
+            Please ensure while attending the interviews to have a stable
+            internet connection and minimum background noise.
           </li>
           <li style={{ "padding-top": "7px" }}>
             DO NOT contact us on our socials to know your progress. All progress
@@ -107,31 +110,38 @@ const Instructions = ({ setShowInstr, showInstr = true }) => {
             to ask any queries.
           </li>
           <li style={{ "padding-top": "7px" }}>
-            In case of any immediate need of information or update we will
+            In case of any immediate need for information or update, we will
             contact you via your phone number or email address. KEEP CHECKING
             FOR UPDATES.
           </li>
+          <h4>Procedure for recruitments</h4>
+        </ol>
+        <ol>
           <li style={{ "padding-top": "7px" }}>
-            Clicking "I am ready" or a similar button is just to let the
-            interviewer know you are ready. You will receive the link via email
-            when an interviewer is free and ready to take your interview. Please
-            keep checking your mail for that duration.
+            Round 1: We request you to join 5 mins before your slot time. Please
+            refresh once the slot time begins, the "I am ready now" button will
+            be enabled. Click the button to enter the queue for your interview.
+            When we are ready to take your interview you will receive a mail.
+            Please ensure you regularly check your mail.
           </li>
           <li style={{ "padding-top": "7px" }}>
-            In case of any immediate need of information or update we will
-            contact you via your phone number or email address. KEEP CHECKING
-            FOR UPDATES.
+            Round 2 (Management): You will be asked to choose the slot for the
+            next round once you have been accepted for Round 2. During the slot
+            timing, please click the "GD Pool" button to join a meet link where
+            you will be instructed further about the round 2 procedure. You will
+            be asked to submit the task that was given to you during round 1 so
+            please keep it ready.
           </li>
           <li style={{ "padding-top": "7px" }}>
-            Any misbehavior or misconduct of any sort will be dealt with extreme
-            seriousness.
+            Round 2 (Tech): After round 1, you will have exactly 48 hours to
+            submit the project that was assigned. After the deadline, you will
+            not be able to submit the project and you will be disqualified. Few
+            hours after you submit the project, you will receive a mail with the
+            slot for your round 2 interview. Open the website during the
+            assigned time to receive the link.
           </li>
           <li style={{ "padding-top": "7px" }}>
-            Use of any unparliamentary or foul language will not be tolerated.
-          </li>
-          <li style={{ "padding-top": "7px" }}>
-            We have the right to reject or disqualify any participant and no
-            complaints or queries regarding the same will be entertained.
+            Round 3: You will be contacted for round 3.
           </li>
         </ol>
       </DialogContent>

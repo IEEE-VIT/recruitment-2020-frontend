@@ -25,7 +25,7 @@ const LandingScreen = () => {
   const [signUpIndicator, setSignUpIndicator] = useState(true);
   const [logInIndicator, setLogInIndicator] = useState(false);
   const [cookies, setCookie, removeCookie] = useCookies(["token"]);
-  const [goToForm, setGoToForm] = useState(false);
+  const [goToForm] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
 
   useEffect(() => {
@@ -154,7 +154,10 @@ const LandingScreen = () => {
         <div id="page-content">
           <h1 className="page-content-heading">Core Committee</h1>
           <h1 className="page-content-heading">Selections</h1>
-          <h3>
+          <h2 style={{ marginTop: "7rem", marginBottom: 0 }}>
+            Recruitments are live now!
+          </h2>
+          <h3 style={{ marginTop: "0.5rem" }}>
             A community of students passionate about tech.{" "}
             <br className="landing-page-line-break" /> Come for the experience,
             stay for the challenge!
