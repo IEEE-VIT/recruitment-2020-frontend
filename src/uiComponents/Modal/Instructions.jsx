@@ -116,7 +116,7 @@ const Instructions = ({ setShowInstr, showInstr = true }) => {
           </li>
           <h4>Procedure for recruitments</h4>
         </ol>
-        <ol>
+        <ol style={{ "padding-left": "20px" }}>
           <li style={{ "padding-top": "7px" }}>
             Round 1: We request you to join 5 mins before your slot time. Please
             refresh once the slot time begins, the "I am ready now" button will
