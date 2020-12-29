@@ -257,7 +257,7 @@ const NonStaticDashboardCard = ({
                 disabled={btnDisabled}
                 className={classes.btn}
               >
-                GD Pool
+                JOIN ROOM
               </Button>
               <Button
                 onClick={() => {
@@ -267,7 +267,7 @@ const NonStaticDashboardCard = ({
                 disabled={disableGDABtn}
                 className={classes.btn}
               >
-                GD Actual
+                GD
               </Button>
             </div>
           </div>
