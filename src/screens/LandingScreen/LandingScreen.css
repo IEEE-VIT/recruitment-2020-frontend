@@ -103,6 +103,11 @@
   line-height: 7vh;
   letter-spacing: 0.1rem;
 }
+@media screen and (max-width : 330px){
+  #page-content h2 {
+    margin-top: 2.6rem !important;
+  }
+}
 #page-content h3 {
   margin-top: 8vh;
   font-size: 1rem;
@@ -312,7 +317,7 @@
   }
   #register-btn {
     width: 38%;
-    margin-top: 4vh;
+    margin-top: 2.5vh !important;
   }
 }
 @media screen and (max-width: 300px) {

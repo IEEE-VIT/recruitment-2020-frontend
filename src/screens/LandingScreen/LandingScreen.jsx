@@ -154,10 +154,7 @@ const LandingScreen = () => {
         <div id="page-content">
           <h1 className="page-content-heading">Core Committee</h1>
           <h1 className="page-content-heading">Selections</h1>
-          <h2 style={{ marginTop: "7rem", marginBottom: 0 }}>
-            Recruitments are live now!
-          </h2>
-          <h3 style={{ marginTop: "0.5rem" }}>
+          <h3>
             A community of students passionate about tech.{" "}
             <br className="landing-page-line-break" /> Come for the experience,
             stay for the challenge!
