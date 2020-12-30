@@ -127,10 +127,21 @@
   font-size: 0.9rem;
   cursor: pointer;
 }
+@media screen and (max-width : 1334px) {
+  #signup-container,
+  #login-container {
+    width: 26vw;
+  }
+}
+@media screen and (max-width : 1188px) {
+  #signup-container,#login-container{
+    width: 28vw;
+  }
+}
 @media screen and (max-width: 1126px) {
   #signup-container,
   #login-container {
-    width: 25vw;
+    width: 28vw;
   }
 }
 @media screen and (max-width: 1024px) {

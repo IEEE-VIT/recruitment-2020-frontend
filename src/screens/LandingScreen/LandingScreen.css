@@ -185,10 +185,10 @@
 }
 @media screen and (max-width: 1024px) {
   #bg-1 {
-    width: 100vw;
+    width: 100vw !important;
   }
   #bg-2 {
-    display: none;
+    display: none !important;
   }
   #page-content {
     margin-left: 0;
