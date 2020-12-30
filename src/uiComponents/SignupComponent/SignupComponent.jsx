@@ -59,16 +59,6 @@ const SignupComponent = ({
       <div id={logInIndicator ? "login-container" : "signup-container"}>
         <div id="signup-header">
           <h4
-            className={signUpIndicator ? "thisison" : "thisisoff"}
-            onClick={() => {
-              if (!signUpIndicator) {
-                toggleIndicators();
-              }
-            }}
-          >
-            Sign Up
-          </h4>
-          <h4
             className={logInIndicator ? "thisison" : "thisisoff"}
             onClick={() => {
               if (!logInIndicator) {

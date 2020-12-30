@@ -22,8 +22,8 @@ const LandingScreen = () => {
   const [pass, setPass] = useState("");
   const [showPass, setShowPass] = useState(false);
   const [confirmPass, setConfirmPass] = useState("");
-  const [signUpIndicator, setSignUpIndicator] = useState(true);
-  const [logInIndicator, setLogInIndicator] = useState(false);
+  const [signUpIndicator, setSignUpIndicator] = useState(false);
+  const [logInIndicator, setLogInIndicator] = useState(true);
   const [cookies, setCookie, removeCookie] = useCookies(["token"]);
   const [goToForm] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
