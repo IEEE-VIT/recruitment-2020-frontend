@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-// import LandingScreen from "./screens/LandingScreen/LandingScreen";
+import LandingScreen from "./screens/LandingScreen/LandingScreen";
 // import formScreen from "./screens/FormScreen/formScreen";
 // import Dashboard from "./screens/Dashboard/dashboard";
 // import ForgotPassword from "./screens/ForgotPassword/ForgotPassword";

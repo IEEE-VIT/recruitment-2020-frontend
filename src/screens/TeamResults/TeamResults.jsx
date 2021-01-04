@@ -57,7 +57,7 @@ const TeamResults = () => {
         <div id="team-names">
           {selectedPeeps.map((data, index) => {
             if (index !== selectedPeeps.length - 1)
-              return <p key={index}>{data} , </p>;
+              return <p key={index}>{data}, </p>;
             else return <p key={index}>{data}</p>;
           })}
         </div>
