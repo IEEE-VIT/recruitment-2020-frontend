@@ -51,7 +51,6 @@ const ResultsHomeScreen=()=>{
                 />
                 <div id="results-home-submit-btn" onClick={()=>regnosubmit()}>I'm Feeling Lucky!</div>
             </div>
-            <img src={ieee_mascot} alt="ieee mascot 3d character"/>
         </div>
         <div className="absolute-pos">
         <ToastContainer

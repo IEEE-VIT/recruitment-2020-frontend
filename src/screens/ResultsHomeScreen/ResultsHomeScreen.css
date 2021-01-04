@@ -18,6 +18,10 @@
 #results-ieee-logo {
     width : 140px;
     height : auto;
+    position: absolute;
+    top : 14%;
+    left : 50%;
+    transform: translate(-50%, -50%);
 }
 #results-home-content {
     width : 97%;
@@ -27,7 +31,7 @@
     border-image-slice: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 8px 8px;
 }

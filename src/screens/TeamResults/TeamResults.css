@@ -44,13 +44,12 @@
     text-align: center;
 }
 #team-names {
-    max-width: 500px;
+    max-width: 700px;
     text-align: center;
-    overflow-y: scroll;
-    overflow-x: hidden;
     flex-wrap: wrap;
     max-height: 60%;
     display: flex;
+    font-size: 0.8rem;
     justify-content: center;
     align-items: center;
     text-align : center;
@@ -66,13 +65,21 @@
         background-image: url("../../assets/grid-bg-phone.png");
     }
     #team-results-content {
+        justify-content: flex-start;
         width : 88%;
         height : 92%;
     }
     #team-results-ieee-logo {
+        margin-top : 24%;
         width : 120px;
     }
     #team-names {
-        max-width: 95%;
+        max-width: 98%;
+    }
+    #team-results-content h1 {
+        font-size: 1.6rem;
+    }
+    #team-results-content p {
+        font-size: 0.6rem;
     }
 }
