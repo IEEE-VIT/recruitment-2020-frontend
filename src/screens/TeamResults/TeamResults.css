@@ -1,85 +1,85 @@
 * {
-    box-sizing: border-box;
-    font-family: "Manrope";
-    user-select: none;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  user-select: none;
 }
 #team-results-container {
-    background-image: url("../../assets/gird-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: #010c1d;
-    width : 100vw;
-    height : 100vh;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("../../assets/gird-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #010c1d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #team-results-ieee-logo {
-    width : 140px;
-    height : auto;
+  width: 140px;
+  height: auto;
 }
 #team-results-content {
-    width : 97%;
-    height : 94%;
-    border: 7px solid;
-    border-image-source: linear-gradient(174.42deg, #2929cc 0%, #e617a1 100%);
-    border-image-slice: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 15px;
+  width: 97%;
+  height: 94%;
+  border: 7px solid;
+  border-image-source: linear-gradient(174.42deg, #2929cc 0%, #e617a1 100%);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
 }
 #team-results-content h1 {
-    margin-top: 4%;
-    font-size: 2rem;
-    color: transparent;
-    background-image: linear-gradient(90.31deg, #00aaff 0.13%, #aa00ff 99.88%);
-    background-clip: text;
-    background-size: fit-content;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-align: center;
+  margin-top: 4%;
+  color: transparent;
+  background-image: linear-gradient(90.31deg, #00aaff 0.13%, #aa00ff 99.88%);
+  background-clip: text;
+  background-size: fit-content;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  font-size: 40px;
 }
 #team-names {
-    max-width: 700px;
-    text-align: center;
-    flex-wrap: wrap;
-    max-height: 60%;
-    display: flex;
-    font-size: 0.8rem;
-    justify-content: center;
-    align-items: center;
-    text-align : center;
+  max-width: 700px;
+  text-align: center;
+  flex-wrap: wrap;
+  max-height: 60%;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-#team-names p{
-    display: inline;
-    color : #ffffff;
-    letter-spacing: 0.07rem;
-    margin : 0.2rem 0.2rem;
+#team-names p {
+  display: inline;
+  color: #ffffff;
+  letter-spacing: 0.07rem;
+  margin: 0.2rem 0.2rem;
 }
-@media screen and (max-width : 560px){
-    #team-results-container{
-        background-image: url("../../assets/grid-bg-phone.png");
-    }
-    #team-results-content {
-        justify-content: flex-start;
-        width : 88%;
-        height : 92%;
-    }
-    #team-results-ieee-logo {
-        margin-top : 24%;
-        width : 120px;
-    }
-    #team-names {
-        max-width: 98%;
-    }
-    #team-results-content h1 {
-        font-size: 1.6rem;
-    }
-    #team-results-content p {
-        font-size: 0.6rem;
-    }
+@media screen and (max-width: 560px) {
+  #team-results-container {
+    background-image: url("../../assets/grid-bg-phone.png");
+  }
+  #team-results-content {
+    justify-content: flex-start;
+    width: 88%;
+    height: 92%;
+    overflow: scroll;
+  }
+  #team-results-ieee-logo {
+    margin-top: 24%;
+    width: 120px;
+  }
+  #team-names {
+    max-width: 98%;
+  }
+  #team-results-content h1 {
+    /* font-size: 1.6rem; */
+  }
+  #team-results-content p {
+    font-size: 12px;
+  }
 }

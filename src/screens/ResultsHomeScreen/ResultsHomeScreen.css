@@ -1,106 +1,106 @@
 * {
-    box-sizing: border-box;
-    font-family: "Manrope";
-    user-select: none;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  user-select: none;
 }
 
 #results-home-container {
-    background-image: url("../../assets/gird-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: #010c1d;
-    width : 100vw;
-    height : 100vh;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("../../assets/gird-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #010c1d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #results-ieee-logo {
-    width : 140px;
-    height : auto;
-    position: absolute;
-    top : 14%;
-    left : 50%;
-    transform: translate(-50%, -50%);
+  width: 140px;
+  height: auto;
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #results-home-content {
-    width : 97%;
-    height : 94%;
-    border: 7px solid;
-    border-image-source: linear-gradient(174.42deg, #2929cc 0%, #e617a1 100%);
-    border-image-slice: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 8px;
+  width: 97%;
+  height: 94%;
+  border: 7px solid;
+  border-image-source: linear-gradient(174.42deg, #2929cc 0%, #e617a1 100%);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px;
 }
 #results-home-regno {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#results-home-regno h1{
-    font-size: 2.3rem;
-    color: transparent;
-    background-image: linear-gradient(90.31deg, #00aaff 0.13%, #aa00ff 99.88%);
-    background-clip: text;
-    background-size: fit-content;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-align: center;
+#results-home-regno h1 {
+  font-size: 2.3rem;
+  color: transparent;
+  background-image: linear-gradient(90.31deg, #00aaff 0.13%, #aa00ff 99.88%);
+  background-clip: text;
+  background-size: fit-content;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
 }
 #results-regno-input-field {
-    background-color: transparent;
-    text-align: center;
-    border: 0;
-    outline: none !important;
-    color: #EFEFEF !important;
-    border: 1px #EFEFEF solid;
-    padding: 8px 5px;
-    font-size: 1rem;
-    font-family: "Manrope";
-    width: 470px;
-    border-radius: 0.1rem;
-    resize: none;
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+  outline: none !important;
+  color: #efefef !important;
+  border: 1px #efefef solid;
+  padding: 8px 5px;
+  font-size: 1rem;
+  font-family: "Manrope";
+  width: 470px;
+  border-radius: 0.1rem;
+  resize: none;
 }
 #results-home-submit-btn {
-    margin-top: 35px;
-    border: 2px #EFEFEF solid;
-    border-radius: 4px;
-    font-size: 1rem;
-    text-align: center;
-    color :  #EFEFEF;
-    padding: 5px 0px;
-    width : 180px;
-    cursor: pointer;
+  margin-top: 35px;
+  border: 2px #efefef solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+  color: #efefef;
+  padding: 5px 0px;
+  width: 180px;
+  cursor: pointer;
 }
-#results-home-submit-btn:hover{
-    box-shadow: 0px 0px 5px 1px rgba(31, 150, 255, 0.6);
+#results-home-submit-btn:hover {
+  box-shadow: 0px 0px 5px 1px rgba(31, 150, 255, 0.6);
 }
-#results-home-submit-btn:active{
-    background-color: #0578DC;
-    box-shadow : 0 0 0 0;
+#results-home-submit-btn:active {
+  background-color: #0578dc;
+  box-shadow: 0 0 0 0;
 }
-@media screen and (max-width : 560px){
-    #results-home-container{
-        background-image: url("../../assets/grid-bg-phone.png");
-    }
-    #results-home-content {
-        width : 88%;
-        height : 92%;
-    }
-    #results-regno-input-field {
-        width : 90%;
-        font-size: 0.9rem;
-    }
-    #results-home-regno h1{
-        font-size: 1.8rem;
-    }
-    #results-ieee-logo {
-        width : 120px;
-    }
+@media screen and (max-width: 560px) {
+  #results-home-container {
+    background-image: url("../../assets/grid-bg-phone.png");
+  }
+  #results-home-content {
+    width: 88%;
+    height: 92%;
+  }
+  #results-regno-input-field {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  #results-home-regno h1 {
+    font-size: 1.8rem;
+  }
+  #results-ieee-logo {
+    width: 120px;
+  }
 }
