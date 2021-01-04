@@ -3,8 +3,7 @@
     font-family: "Manrope";
     user-select: none;
 }
-
-#results-home-container {
+#individual-results-container {
     background-image: url("../../assets/gird-bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -15,11 +14,15 @@
     justify-content: center;
     align-items: center;
 }
-#results-ieee-logo {
+#ind-results-ieee-logo {
     width : 140px;
     height : auto;
+    position: fixed;
+    top : 14%;
+    left : 50%;
+    transform: translate(-50%, -50%);
 }
-#results-home-content {
+#individual-results-content {
     width : 97%;
     height : 94%;
     border: 7px solid;
@@ -27,18 +30,12 @@
     border-image-slice: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 8px 8px;
 }
-#results-home-regno {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#results-home-regno h1{
-    font-size: 2.3rem;
+#individual-selected h1 {
+    font-size: 2rem;
     color: transparent;
     background-image: linear-gradient(90.31deg, #00aaff 0.13%, #aa00ff 99.88%);
     background-clip: text;
@@ -49,21 +46,13 @@
     -moz-text-fill-color: transparent;
     text-align: center;
 }
-#results-regno-input-field {
-    background-color: transparent;
+#individual-selected h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
     text-align: center;
-    border: 0;
-    outline: none !important;
-    color: #EFEFEF !important;
-    border: 1px #EFEFEF solid;
-    padding: 8px 5px;
-    font-size: 1rem;
-    font-family: "Manrope";
-    width: 470px;
-    border-radius: 0.1rem;
-    resize: none;
+    color: #ffffff;
 }
-#results-home-submit-btn {
+#ind-results-redirect-btn {
     margin-top: 35px;
     border: 2px #EFEFEF solid;
     border-radius: 4px;
@@ -74,29 +63,28 @@
     width : 180px;
     cursor: pointer;
 }
-#results-home-submit-btn:hover{
+#ind-results-redirect-btn:hover{
     box-shadow: 0px 0px 5px 1px rgba(31, 150, 255, 0.6);
 }
-#results-home-submit-btn:active{
+#ind-results-redirect-btn:active{
     background-color: #0578DC;
     box-shadow : 0 0 0 0;
 }
 @media screen and (max-width : 560px){
-    #results-home-container{
+    #individual-results-container{
         background-image: url("../../assets/grid-bg-phone.png");
     }
-    #results-home-content {
+    #individual-results-content {
         width : 88%;
         height : 92%;
     }
-    #results-regno-input-field {
-        width : 90%;
-        font-size: 0.9rem;
-    }
-    #results-home-regno h1{
-        font-size: 1.8rem;
-    }
-    #results-ieee-logo {
+    #ind-results-ieee-logo {
         width : 120px;
+    }
+    #individual-selected h1 {
+        font-size : 1.7rem;
+    }
+    #individual-selected h2 {
+        font-size : 1.1rem;
     }
 }
