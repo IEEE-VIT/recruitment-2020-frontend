@@ -15,7 +15,7 @@ const IndividualResultsScreen =(props)=>{
             </a>
             <div id="individual-selected">
                 <h1>{props.props.selected?"You're in!":"Sorry, You couldn't make the cut :("}</h1>
-                <h2>{props.props.selected?"Welcome to the legacy":"But we wish you best of luck for your journey!"}</h2>
+                <h2>{props.props.selected?"Welcome to the legacy":"But we wish you best of luck for your journey!"}<span id="love">{props.props.selected?" ❤":""}</span></h2>
             </div>
             <div id="ind-results-redirect-btn" onClick={()=>{setRedirect(true)}}>{props.props.selected?"Meet your team":"Look who got in!"}</div>
         </div>
