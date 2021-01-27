@@ -5,7 +5,7 @@
 
 ## About
 
-Recruitment 2020 Frontend, This project was to create a frontend that ensures a smooth process of recruiting an amazing set of people into IEEE-VIT.It handles the user side of the recuitment process.It includes an option to signup or login into your account, an option to reset your password, a typeform-like form that tests the candidates on some questions recieved from the backend and a dashboard that gives you options to select your slots for your interviews, show you the meeting link during your time slot and also show live updates regarding the results of each interview round.
+Recruitment 2020 Frontend, This project was to create a frontend that ensures a smooth process of recruiting an amazing set of people into IEEE-VIT. It handles the user side of the recuitment process. It includes an option to signup or login into your account, an option to reset your password, a typeform-like form that tests the candidates on some questions recieved from the backend and a dashboard that gives you options to select your slots for your interview, show you the meeting link during your time slot and also show live updates regarding the results of each interview round.
 
 You can check out the website [here](https://ccs.ieeevit.org/).
 
