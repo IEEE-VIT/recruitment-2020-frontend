@@ -33,7 +33,7 @@ REACT_APP_BACKEND_URL=
 REACT_APP_SITE_KEY= <GOOGLE_RECAPTCHA_KEY>
 ```
 
-To start contributing, check out [`CONTRIBUTING.md`](CONTRIBUTING.md) . New contributors are always welcome to support this project.
+To start contributing, check out [`CONTRIBUTING.md`](https://github.com/IEEE-VIT/recruitment-2020-frontend/blob/main/CONTRIBUTING.md) . New contributors are always welcome to support this project.
 
 ## Contributors ✨
 
